@@ -1,5 +1,8 @@
 const { booleanToWord } = require("../src");
 
 describe("booleanToWord", () => {
-  // how do we create specs again???
+  test("To return Boolean value True & False to Yes & No", () => {
+    expect(booleanToWord(true)).toMatch("Yes");
+    expect(booleanToWord(false)).toMatch("No");
+  });
 });
